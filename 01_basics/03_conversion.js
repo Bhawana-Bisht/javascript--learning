@@ -19,3 +19,20 @@ let someNumber= 78
 let stringNumber=String(someNumber)
 console.log(stringNumber);
 console.log(typeof  stringNumber)
+
+// **operations **//
+let value =3
+ let  negvalue= -value
+ console.log(negvalue)
+ let str1= "bhawana"
+let str2= "bhumi"
+ let str3= str1+ str2
+console.log( str3)
+console.log(1+"2")
+console.log("1" +2)
+console.log("1" +2 +2)
+console.log(2+2+"1")
+console.log(true);
+ let gamecounter= 400
+  gamecounter++
+   console.log(gamecounter)

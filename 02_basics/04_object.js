@@ -40,7 +40,18 @@ console.log(regularUser.fullname.userfullname);
   console.log(googleUser.hasOwnProperty('isloggedin'))
   console.log(googleUser.hasOwnProperty('name'))
    console.log(googleUser.hasOwnProperty('voterid'))
-  
+   //destructuring
+    const course ={
+         coursename: "js in hindi",
+          price:999,
+           courseInstructor: "bhawana",
+    }
+   console.log( course.courseInstructor)
+   //json is type of object
+ //  {
+    // "name":" hitesh"
+     // "coursename":"js in hindi"
+ //     "price":"free"  }
   
 
   

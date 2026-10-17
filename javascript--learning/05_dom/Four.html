@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: rgb(103, 120, 195);"
+style.fontFamily="Arial, Helvetica, sans-serif">
+    <ul class="languages">
+        <li>javascript</li>
+        <li>java</li>
+        <li>python</li>
+        
+    </ul>
+</body>
+<script>
+    //create a function to addlanguages
+     function addlanguages(Langname){
+       const li=  document.createElement('li');
+       li.innerHTML=Langname;
+       document.querySelector('.languages').appendChild(li);
+     }
+     addlanguages("C++");
+     addlanguages("Go");
+
+     // optimised way add languages
+     function addoptilanguages(Langname){
+       const li=  document.createElement('li');
+       li.appendChild(document.createTextNode(Langname));
+       document.querySelector('.languages').appendChild(li);
+     }
+     addoptilanguages("SQL");
+     addoptilanguages("Ruby");
+
+//edit value of li
+const secondlang= document.querySelector("li:nth-child(2)");
+const newli=document.createElement("li");
+newli.textContent="HTML";
+secondlang.replaceWith(newli);
+//secondlang.innerHTML="HTML";
+// secondlang.outerHTML="<li>HTML</li>";
+
+// remove element from the list
+const lastlang= document.querySelector("li:last-child");
+lastlang.remove();
+
+
+</script>
+</html>
